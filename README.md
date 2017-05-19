@@ -42,6 +42,9 @@ https://git.oschina.net/gists 代码云片段
 http://mp.weixin.qq.com/s?__biz=MzIxMDA0OTcxNA==&mid=2654255113&idx=1&sn=b09df352072d2d8b2c23ab284184143c&chksm=8caa97d4bbdd1ec2eae7b15400d287e279ec6f8d8e8963ff33e9c3c5f9b3e977927acc8191c3&mpshare=1&scene=1&srcid=0327ML0G7WuFmnQdeFOrfeId#rd  redis 常见的使用场景
 
 
+http://www.cnyunwei.com/thread-30090-1-1.html 一个简单的MySQL备份脚本【顶】
+
+
 
 
 
