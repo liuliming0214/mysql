@@ -1,0 +1,34 @@
+mysql 分区
+
+CREATE TABLE
+IF NOT EXISTS USER (
+	id INT NOT NULL auto_increment,
+	name varchar(30) not null default '',
+	sex int (1) NOT NULL DEFAULT '0',
+	PRIMARY KEY (id)
+) DEFAULT charset = utf8 auto_increment = 1 PARTITION BY RANGE (id)(
+	PARTITION p0
+	VALUES
+		less than (3),
+		PARTITION p1
+	VALUES
+		less than (6),
+		PARTITION p2
+	VALUES
+		less than (9),
+		PARTITION p3
+	VALUES
+		less than (12),
+		PARTITION p4
+	VALUES
+		less than MAXVALUE
+);
+insert into test.user(name,sex)values ('tom14','1');
+select count(id) as count from user;
+从 information_schema 系统库中的 partitions 表中查看分区信息
+select * from information_schema.partitions where table_schema='test' and table_name='user'
+;
+从某个分区中查询数据
+select * from test.user partition(p0);
+新增分区
+alter table test.user add partition (partition partionname values less than (n));
