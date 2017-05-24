@@ -54,5 +54,4 @@ Records: 15  Duplicates: 0  Warnings: 0
 alter table aa drop partition p2;  
 Query OK, 0 rows affected (0.30 sec)  
 Records: 0  Duplicates: 0  Warnings: 0  
-  
-//只有11条了，说明对现有的表分区成功了  
+只有11条了，说明对现有的表分区成功了  
