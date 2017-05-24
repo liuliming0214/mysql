@@ -30,5 +30,10 @@ select * from information_schema.partitions where table_schema='test' and table_
 ;
 从某个分区中查询数据
 select * from test.user partition(p0);
+删除分区
+alter table user drop partition p4; 
 新增分区
-alter table test.user add partition (partition partionname values less than (n));
+如果分区中有最大分区 less than MAXVALUE 添加时不成功的
+alter table test.user add partition (partition p5 values less than (20)); 添加分区成功
+
+alter table test.user add partition (partition p6 values less than (MAXVALUE));
