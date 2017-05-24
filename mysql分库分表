@@ -3,6 +3,8 @@ https://yq.aliyun.com/articles/42950
 
 mysql 分区
 
+1.range分区
+
 CREATE TABLE
 IF NOT EXISTS USER (
 	id INT NOT NULL auto_increment,
@@ -40,3 +42,17 @@ alter table user drop partition p4;
 alter table test.user add partition (partition p5 values less than (20)); 添加分区成功
 
 alter table test.user add partition (partition p6 values less than (MAXVALUE));
+/*可以对现有表进行分区,并且会按規则自动的将表中的数据分配相应的分区 
+中，这样就比较好了，可以省去很多事情，看下面的操作*/  
+mysql> alter table aa partition by RANGE(id)  
+ -> (PARTITION p1 VALUES less than (1),  
+ -> PARTITION p2 VALUES less than (5),  
+ -> PARTITION p3 VALUES less than MAXVALUE);  
+Query OK, 15 rows affected (0.21 sec)   //对15数据进行分区  
+Records: 15  Duplicates: 0  Warnings: 0  
+
+alter table aa drop partition p2;  
+Query OK, 0 rows affected (0.30 sec)  
+Records: 0  Duplicates: 0  Warnings: 0  
+  
+//只有11条了，说明对现有的表分区成功了  
