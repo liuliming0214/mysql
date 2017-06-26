@@ -1,6 +1,10 @@
 # mysql
 mysql集群 优化 学习笔记
 
+https://www.aliyun.com/ss/bXlzcWwgZXhwbGFpbg  mysql explain
+
+https://yq.aliyun.com/articles/59803 MySql常用命令
+
 
 http://www.cnyunwei.com/forum-17-1.html   运维MySQL
 
