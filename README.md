@@ -1,6 +1,8 @@
 # mysql
 mysql集群 优化 学习笔记
 
+http://blog.codinglabs.org/articles/theory-of-mysql-index.html   MySQL索引背后的数据结构及算法原理
+
 http://www.cnblogs.com/jukan/p/5670950.html MySQL详解－－锁，事务
 
 https://www.aliyun.com/ss/bXlzcWwgZXhwbGFpbg  mysql explain
