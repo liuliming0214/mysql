@@ -1,6 +1,8 @@
 # mysql
 mysql集群 优化 学习笔记
 
+http://www.cnblogs.com/jukan/p/5670950.html MySQL详解－－锁，事务
+
 https://www.aliyun.com/ss/bXlzcWwgZXhwbGFpbg  mysql explain
 
 https://yq.aliyun.com/articles/59803 MySql常用命令
