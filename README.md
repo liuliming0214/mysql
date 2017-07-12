@@ -56,7 +56,7 @@ http://mp.weixin.qq.com/s?__biz=MzIxMDA0OTcxNA==&mid=2654255113&idx=1&sn=b09df35
 
 http://www.cnyunwei.com/thread-30090-1-1.html 一个简单的MySQL备份脚本【顶】
 
-
+https://yq.aliyun.com/articles/66281?spm=5176.100239.blogcont122895.24.1Dhs7Q#  linux 下 docker NGINX+PHP+MYSQL+REDIS+Elasticsearch 开发环境搭建 
 
 
 
